@@ -1,0 +1,20 @@
+﻿<Page
+    x:Class="OpenVK.LoginPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:OpenVK"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Button x:Name="loginButton" Content="Войти" Margin="10,0,10,5" VerticalAlignment="Bottom" FontSize="18" HorizontalAlignment="Stretch" Click="loginButton_Click"/>
+        <StackPanel Margin="10,10,10,10" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <Image Margin="10,10,10,10" HorizontalAlignment="Center" Height="100" VerticalAlignment="Stretch" Width="100"/>
+            <TextBox Margin="0,0,0,10" x:Name="instanceBox" HorizontalAlignment="Stretch" TextWrapping="Wrap" Text="" PlaceholderText="Инстанция" VerticalAlignment="Center"/>
+            <TextBox Margin="0,0,0,10" x:Name="loginBox" HorizontalAlignment="Stretch" TextWrapping="Wrap" Text="" PlaceholderText="Логин" VerticalAlignment="Center"/>
+            <PasswordBox Margin="0,0,0,10" x:Name="passwordBox" HorizontalAlignment="Stretch" PlaceholderText="Пароль" VerticalAlignment="Center"/>
+        </StackPanel>
+    </Grid>
+</Page>
